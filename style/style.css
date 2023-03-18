@@ -1,0 +1,711 @@
+@charset "UTF-8";
+
+/*CONFIGURACOES GERAIS*/
+
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--body-bg-color);
+       
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+
+/*PROFILE*/  
+.profile {
+    position: absolute;
+    height: 292px;
+    width: 348px;
+    left: 40px;
+    top: 40px;
+    border-radius: 20px;
+
+    background-color: var(--bg-cards);
+
+}
+
+.elipse {
+    box-sizing: border-box;
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 110px;
+    top: 32px;
+
+    background: url(https://avatars.githubusercontent.com/u/44503877?v=4);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+
+    border: 2px solid #00FF00;
+    border-radius: 50%;
+}
+
+.profile h3 {
+    position: absolute;
+    width: 196px;
+    height: 26px;
+    top: 190px;
+    left: 76px;
+    right: 76px;
+    bottom: 76px;
+    text-align: center;
+    
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    
+}
+
+.profile p {
+    position: absolute;
+    width: 128px;
+    height: 17px;
+    left: 110px;
+    top: 226px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);    
+
+}
+
+/*LINKS*/
+.links {
+    position: absolute;
+    width: 348px;
+    height: 260px;
+    top: 362px;
+    left: 40px;
+
+    background-color: var(--bg-cards);
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.local {
+    position: absolute;
+    width: 157px;
+    height: 16px;
+    left: 84px;
+    top: 34px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    align-items: center;
+}
+
+.empresa {
+    position: absolute;
+    width: 187px;
+    height: 16px;
+    left: 84px;
+    top: 78px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    align-items: center;
+}
+
+.github {
+    position: absolute;
+    width: 41px;
+    height: 16px;
+    left: 84px;
+    top: 122px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    align-items: center;
+}
+
+.linkedin {
+    position: absolute;
+    width: 45px;
+    height: 16px;
+    left: 84px;
+    top: 166px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    align-items: center;
+}
+
+.email {
+    position: absolute;
+    width: 193px;
+    height: 16px;
+    left: 84px;
+    top: 210px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    align-items: center;
+}
+
+#local {
+/* map-pin */
+position: absolute;
+width: 24px;
+height: 24px;
+left: 40px;
+top: 30px;
+
+background-color: var(--bg-cards);
+align-items: center;
+}
+
+#empresa {
+    /* briefcase */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 40px;
+    top: 74px;
+
+    background-color: var(--bg-cards);
+    align-items: center;
+}
+
+#git {
+    /* github */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 40px;
+    top: 118px;
+
+    background-color: var(--bg-cards);
+    align-items: center;
+}
+
+#linkedin {
+    /* linkedin */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 40px;
+    top: 162px;
+
+    background-color: var(--bg-cards);
+    align-items: center;
+}
+
+#email {
+        /* map-pin */
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 40px;
+        top: 208px;
+                
+        background-color: var(--bg-cards);
+        align-items: center;
+}    
+
+
+.technologies {    
+    position: absolute;
+    width: 348px;
+    height: 208px;
+    left: 40px;
+    top: 650px;
+
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+.technologies h4 {
+    position: absolute;
+    width: 121px;
+    height: 26px;
+    left: 20px;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+    
+}
+
+.grupoA {
+    top: 76px;
+    left: 30px;
+}
+
+.grupoB {
+    top: 115px;
+    left: 30px;
+}
+
+.grupoC {
+    top: 154px;
+    left: 30px;
+}
+
+.grupoA, .grupoB, .grupoC {
+    display: flex;
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;     
+    gap: 15px;
+
+    background-color: var(--bg-cards);
+    color: black;
+    
+}
+
+#itemA, #itemB, #itemC, 
+#itemD, #itemE, #itemF,
+#itemG, #itemH, #itemI {
+    display: flex;
+    width: 86px;
+    height: 24px;
+    
+
+    background-color: var(--bg-techs);
+    border-radius: 30px;    
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    
+    justify-content: center;
+    align-items: center
+   
+}
+
+.experiences {
+    position: absolute;
+    width: 348px;
+    height: 349px;
+    left: 40px;
+    top: 888px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    
+}
+
+#experiences {
+    position: absolute;
+    width: 141px;
+    height: 26px;
+    left: 20px;
+    top: 30px;
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    
+}
+
+ul {
+    position: absolute;
+    width: 160px;
+    height: 243px;
+    left: 80px;
+    top: 76px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+}
+
+li, strong {
+    background-color: var(--bg-cards);
+}
+
+.education {
+    position: absolute;
+    width: 348px;
+    height: 352px;
+    left: 40px;
+    top: 1270px;
+
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+#education {
+    position: absolute;
+    width: 141px;
+    height: 26px;
+    left: 20px;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+
+}
+
+.projects {
+    display: flex;
+    position: absolute;
+    width: 930px;
+    height: 86px;
+    left: 448px;
+    top: 40px;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+    
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+#projects {
+    display: flex;   
+    width: 791px;
+    height: 30px;
+    background-color: var(--bg-cards);
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    border-style: none;
+
+    background-color: var(--bg-cards);
+    color: var(--text-color)
+
+}
+
+#btnProjects {
+    display: flex;
+    width: 84px;
+    height: 18px;
+    left: 801px;
+    top: 74px;
+    justify-content: center;
+    border-style: none;
+   
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    background: var(--bg-cards);
+    color: var(--text-color);
+}
+
+
+.recent {
+    position: absolute;
+    width: 952px;
+    height: 86px;
+    left: 448px;
+    top: 373px;
+
+    background: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.recent p {
+    position: absolute;
+    width: 140px;
+    height: 26px;
+    left: 30px;
+    top: 30px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: var(--text-color);
+    background: var(--bg-cards);
+}
+
+.project1 {
+    display: flex;
+    position: absolute;
+    width: 461px;
+    height: 186px;
+    left: 448px;
+    top: 157px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    color: var(--text-color);
+
+}
+
+.project2 {
+    display: flex;
+    position: absolute;
+    width: 461px;
+    height: 186px;
+    left: 939px;
+    top: 157px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    color: var(--text-color);
+
+}
+
+.hd-project {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    gap: 16px;
+
+    align-items: center;
+
+    background-color: var(--bg-cards);
+}
+
+.project1 > p {
+    position: absolute;
+    width: 421px;
+    height: 19px;
+    left: 30px;
+    top: 70px;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    
+}
+
+.project2 > p {
+    position: absolute;
+    width: 421px;
+    height: 19px;
+    left: 30px;
+    top: 70px;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    
+}
+
+.footer-project {
+    display: flex;
+    position: absolute;
+    width: 128px;
+    height: 20px;
+    left: 30px;
+    top: 146px;
+    gap: 16px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    background-color: var(--bg-cards);
+}
+
+.footer-java {
+    display: flex;
+    position: absolute;
+    width: 92px;
+    height: 16px;
+    left: 339px;
+    top: 138px;
+    gap: 8px;
+
+    background-color: var(--bg-cards);
+}
+
+span, p, img {
+    background-color: var(--bg-cards);
+    font-size: 14px;
+}
+
+
+.post{
+    position: absolute;
+    width: 952px;
+    height: 201px;
+    left: 448px;
+    top: 489px;
+
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.elipsePost {
+    box-sizing: border-box;
+    position: absolute;
+    width: 129px;
+    height: 128px;
+    left: 31px;
+    top: 31px;
+
+    background: url(https://avatars.githubusercontent.com/u/44503877?v=4);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    
+    border-radius: 50%;
+}
+
+.textPost {
+    position: absolute;
+    width: 612px;
+    height: 129px;
+    left: 178px;
+    top: 30px;   
+    
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+}
+
+.textPost > h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px; 
+    
+    background-color: var(--bg-cards);
+}
+
+.textPost > h5 {
+    position: absolute;
+    width: 83px;
+    height: 18px;
+    top: 28px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    background-color: var(--bg-cards);
+}
+
+.textPost > p {
+    position: absolute;
+    width: 501px;
+    height: 20px;
+    top: 80px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.tag {
+    display: flex;
+    position: absolute;
+    width: 446px;
+    height: 21px;
+    top: 107px;
+    gap: 18px;
+
+    background-color: var(--bg-cards);
+
+    font-size: 14px;
+}
+
+footer {
+    position: absolute;
+    width: 206px;
+    height: 19px;
+    left: 617px;
+    top: 1728px;
+    
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    
+    color: var(--text-color);
+    
+}
+
+#footer {
+    background-color: var(--body-bg-color);
+}
